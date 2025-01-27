@@ -1,10 +1,14 @@
+import Image from "next/image";
+import React from "react";
+
 const Gallery = () => {
-  return (
-    <div className="pt-16 px-4">
-      <h1 className="text-3xl font-bold mt-8">Gallery</h1>
-      <p>Here are some images in the gallery.</p>
-    </div>
-  );
-};
+    return (
+        <section id="gallery" className="mb-8">
+            <h2 className="text-red-400 text-2xl font-bold mb-2">Galerie</h2>
+            <Image  src="/assets/powermici.png" width="550" height="550" alt='World of Warcraft tavern with mici, bere, and manele vibes' />
+            <p className="mt-4">Momentan, adunăm cele mai epice poze din Azeroth. Trimite-ne screenshot-uri și momente epice!</p>
+          </section>
+);
+}
 
 export default Gallery;

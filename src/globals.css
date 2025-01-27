@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 @import "tailwindcss";
 
 @tailwind base;
@@ -6,19 +7,6 @@
 
 /* Custom styles */
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
-@theme {
-  --color-primary-300: oklch(62.31% 0.188 259.81);
-  --color-primary-500: oklch(32.82% 0.1484 261.7);
-  --color-primary-700: oklch(28.95% 0.0558 265.99);
-
-  --color-secondary-300: oklch(92.48% 0.0902 96.83);
-  --color-secondary-500: oklch(87.24% 0.1757 93.47);
-  --color-secondary-700: oklch(75.65% 0.1546 88.5);
-
-  --color-natural-300: oklch(97.02% 0 0);
-  --color-natural-500: oklch(32.11% 0 0);
-  --color-offwhite: oklch(100% 0 0);
-}
