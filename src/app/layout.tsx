@@ -1,6 +1,6 @@
 import React from "react"; // Import React
-import Navbar from "../components/Navbar";
-import './globals.css'
+import '../globals.css'
+import Sidebar from "@/components/Sidebar";
 
 interface LayoutProps {
   children: React.ReactNode; // Define children prop type
@@ -14,10 +14,10 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
       {/* Flex container */}
       <div className="flex h-screen">
         {/* Sidebar */}
-        <Navbar />
+        <Sidebar />
         
         {/* Main content area */}
-        <main className="pt-16 px-4">{children}</main>
+        <main className="flex-1 overflow-y-auto bg-natural-300 p-6 lg:ml-64">{children}</main>
       </div>
     </body>
   </html>
