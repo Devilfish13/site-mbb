@@ -15,16 +15,16 @@ import {
 
 const App = () => {
   return (
-    <div className="mb-8 flex flex-col w-full">
+    <div id="wrapper" className="mb-8 flex flex-col w-full">
       <div className="mb-8 flex flex-col lg:flex-row items-center w-full">
-        <div className="flex w-1/2 md:w-2/3 lg:w-1/3  md:items-centerr md:m-auto relative sm:p-4 lg:p-0">
+        <div className="flex w-2/3 md:w-2/3 lg:w-1/3  md:items-centerr md:m-auto relative sm:p-4 lg:p-0">
           <Image
             src={desprePic}
             objectFit="contain"
-            alt="Mici bere si manele"
+            alt="Mici bere si manele info"
           />
         </div>
-        <div className="lg:px-16 flex flex-col gap-8 lg:w-2/3 ">
+        <div className=" flex flex-col gap-8 lg:w-2/3 lg:px-16 ">
           <h2 className="text-red-400 text-2xl font-bold mb-2">
             {DESPRE_TITLE}
           </h2>

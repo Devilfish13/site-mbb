@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import recruitPic from "../../../public/assets/recrutari.png";
 import {
   APLICA_P1,
   APLICA_P2,
@@ -26,17 +27,20 @@ import {
 
 const Recruitment = () => {
   return (
-    <div className="mb-8 flex flex-col ">
-      <section className="mb-8 flex justify-center ">
-        <Image
-          src="/assets/recrutari.png"
-          width="500"
-          height="500"
-          alt="Mici bere si manele"
-        />
+    <div id="wrapper" className="mb-8 flex flex-col ">
+      <div className="mb-8 flex flex-col lg:flex-row items-center w-full ">
+        <div className="flex w-2/3 md:w-2/3 lg:w-1/3  md:items-center md:m-auto relative sm:p-4 lg:p-0">
+          <Image
+            src={recruitPic}
+            width="500"
+            objectFit="contain"
+            alt="Mici bere si manele recruteaza"
+          />
+        </div>
 
-        <div className="px-16 flex flex-col gap-8">
+        <div className="flex flex-col gap-8 lg:w-2/3 lg:px-16">
           <p>{INTRO}</p>
+
           <div className=" flex flex-col gap-8">
             <h2 className="text-red-400 text-2xl font-bold mb-2">
               {CAUTAM_TITLE}
@@ -56,6 +60,7 @@ const Recruitment = () => {
               </li>
             </ul>
           </div>
+
           <div className="flex flex-col gap-8">
             <h2 className="text-red-400 text-2xl font-bold mb-2">
               {OFERIM_TITLE}
@@ -80,27 +85,23 @@ const Recruitment = () => {
             </ul>
           </div>
         </div>
-      </section>
+      </div>
 
-      <section className="mb-8 flex ">
-        <div className="flex flex-col gap-8">
-          <h2 className="text-red-400 text-2xl font-bold mb-2">
-            {APLICA_TITLU}
-          </h2>
-          <p>{APLICA_P1}</p>
-          <Link
-            href="https://apply.wowaudit.com/eu/tarren-mill/mici-bere-si-manele/vanzatori-de-mititei?preview"
-            className="text-blue-500 decoration-solid"
-            target="_blank"
-          >
-            Aplica Aici
-          </Link>
-          <div>
-            <p>{APLICA_P2}</p>
-            <p>{APLICA_P3}</p>
-          </div>
+      <div className="flex flex-col gap-8">
+        <h2 className="text-red-400 text-2xl font-bold mb-2">{APLICA_TITLU}</h2>
+        <p>{APLICA_P1}</p>
+        <Link
+          href="https://apply.wowaudit.com/eu/tarren-mill/mici-bere-si-manele/vanzatori-de-mititei?preview"
+          className="text-blue-500 decoration-solid"
+          target="_blank"
+        >
+          Aplica Aici
+        </Link>
+        <div>
+          <p>{APLICA_P2}</p>
+          <p>{APLICA_P3}</p>
         </div>
-      </section>
+      </div>
     </div>
   );
 };
