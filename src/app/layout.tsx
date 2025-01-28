@@ -12,10 +12,10 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
     <html lang="en">
       <body className="bg-neutral-900 text-gray-900">
         {/* Flex container */}
-        <div className="flex flex-col h-screen w-screen">
+        <div className="flex flex-col">
           <Header />
           {/* Main content area */}
-          <main className="text-neutral-100 h-screen flex max-w-350 m-auto py-8 px-4 justify-center ">
+          <main className="text-neutral-100 flex max-w-350 m-auto py-8 px-4 justify-center ">
             {children}
           </main>
           <Footer />
