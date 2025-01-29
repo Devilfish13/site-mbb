@@ -19,10 +19,10 @@ const Header = () => {
       <nav className="bg-yellow-400 py-2 text-neutral-900">
         <div className="it container mx-auto flex justify-center space-x-4">
           <Link href="/" className="font-bold hover:text-red-500">
-            Despre Guildă
+            Despre guildă
           </Link>
           <Link href="/roster" className="font-bold hover:text-red-500">
-            Roster
+            Echipă
           </Link>
           <Link href="/calendar" className="font-bold hover:text-red-500">
             Calendar
