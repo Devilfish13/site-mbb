@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
-@import "tailwindcss";
+@import 'tailwindcss';
 
 @tailwind base;
 @tailwind components;
@@ -10,3 +10,19 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+@theme {
+  --color-death-knight: #eb4561;
+
+  --color-druid: #ffa330;
+  --color-demon-hunter: #c350e9;
+  --color-evoker: #55b39f;
+  --color-hunter: #d1fa99;
+  --color-mage: #8ff2ff;
+  --color-monk: #00ffb0;
+  --color-paladin: #f58cba;
+  --color-priest: #d9d9d9;
+  --color-rogue: #ffff8f;
+  --color-shaman: #4a80ff;
+  --color-warlock: #b8a8f0;
+  --color-warrior: #edc294;
+}
