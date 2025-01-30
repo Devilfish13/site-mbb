@@ -2,8 +2,14 @@ import Player from '@/components/Player/Player';
 import { PlayerType } from '@/types/Player';
 
 const Roster = async () => {
-  const res = await fetch('http://localhost:3000/api/getRoster');
+  console.log(process.env.NEXT_PUBLIC_API_URL + '/api/getRoster');
+  const res = await fetch(process.env.NEXT_PUBLIC_API_URL + '/api/getRoster');
+
   const data = await res.json();
+
+  if (data.error) {
+    return <p>Failed to load roster. Please try again later.</p>;
+  }
 
   const tanks: PlayerType[] = data.filter(
     (item: PlayerType) => item.role === 'Tank',
@@ -17,8 +23,6 @@ const Roster = async () => {
   const ranged: PlayerType[] = data.filter(
     (item: PlayerType) => item.role === 'Ranged',
   );
-
-  console.log(ranged);
 
   return (
     <div className="mb-8 flex flex-col gap-2 md:flex-row md:gap-8 lg:flex-row lg:gap-16">
