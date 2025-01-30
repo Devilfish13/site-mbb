@@ -6,8 +6,8 @@ export const dynamic = 'force-dynamic';
 const absoluteUrl = () => {
   const baseUrl =
     process.env.NODE_ENV === 'development'
-      ? 'http://localhost:3000/' // Localhost in development
-      : 'https://' + process.env.NEXT_PUBLIC_VERCEL_URL; // Vercel URL in production
+      ? 'http://localhost:3000' // Localhost in development
+      : 'https://www.mbm-guild.ro'; // Vercel URL in production
 
   return baseUrl;
 };
