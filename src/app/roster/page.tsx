@@ -3,7 +3,7 @@ import { PlayerType } from '@/types/Player';
 
 const Roster = async () => {
   const res = await fetch(
-    process.env.NEXT_PUBLIC_VERCEL_URL + '/api/getRoster',
+    'https://' + process.env.NEXT_PUBLIC_VERCEL_URL + '/api/getRoster',
   );
 
   const data = await res.json();
