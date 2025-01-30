@@ -13,6 +13,7 @@ const absoluteUrl = () => {
 };
 
 const Roster = async () => {
+  console.log(absoluteUrl() + '/api/getRoster')
   const res = await fetch(absoluteUrl() + '/api/getRoster');
 
   const data = await res.json();
