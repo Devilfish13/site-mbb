@@ -1,6 +1,8 @@
 import Player from '@/components/Player/Player';
 import { PlayerType } from '@/types/Player';
 
+export const dynamic = 'force-dynamic';
+
 const absoluteUrl = () => {
   const baseUrl =
     process.env.NODE_ENV === 'development'
