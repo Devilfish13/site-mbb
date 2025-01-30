@@ -1,10 +1,17 @@
 import Player from '@/components/Player/Player';
 import { PlayerType } from '@/types/Player';
 
+const absoluteUrl = () => {
+  const baseUrl =
+    process.env.NODE_ENV === 'development'
+      ? 'http://localhost:3000/' // Localhost in development
+      : 'https://' + process.env.NEXT_PUBLIC_VERCEL_URL; // Vercel URL in production
+
+  return baseUrl;
+};
+
 const Roster = async () => {
-  const res = await fetch(
-    'https://' + process.env.NEXT_PUBLIC_VERCEL_URL + '/api/getRoster',
-  );
+  const res = await fetch(absoluteUrl() + '/api/getRoster');
 
   const data = await res.json();
 
