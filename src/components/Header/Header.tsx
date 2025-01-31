@@ -24,9 +24,6 @@ const Header = () => {
           <Link href="/roster" className="font-bold hover:text-red-500">
             Echipă
           </Link>
-          <Link href="/calendar" className="font-bold hover:text-red-500">
-            Calendar
-          </Link>
           <Link href="/gallery" className="font-bold hover:text-red-500">
             Galerie
           </Link>
